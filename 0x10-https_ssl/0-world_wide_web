@@ -13,10 +13,10 @@ if [ $# -eq 1 ]; then
     url="$1"
     for s in "${allSubs[@]}"
     do
-	runDig "$s" "$url"
+	funDig "$s" "$url"
     done
 elif [ $# -eq 2 ]; then
     url="$1"
     sub="$2"
-    runDig "$sub" "$url"
+    funDig "$sub" "$url"
 fi
