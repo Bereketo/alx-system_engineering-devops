@@ -8,7 +8,7 @@ import requests
 
 def top_ten(subreddit):
     """ a functon that queres the reddit """
-    url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=10"
+    url = ("https://api.reddit.com/r/{}/about".format(subreddit))
     headers = {'User-Agent': 'CustomClient/1.0'}
     response = requests.get(url, headers=headers, allow_redirects=False)
 
