@@ -7,7 +7,7 @@ import re
 
 
 def count_words(subreddit, word_list, after=None, word_count={}):
-    headers = {'User-Agent': 'Mozilla/5.0'}
+    headers = "User-Agent": "linux:0x16.api.advanced:v1.0.0 (by /u/bdov_)"
     url = "https://www.reddit.com/r/{}/hot/.json".format(subreddit)
     params = {'limit': 100}
     if after:
